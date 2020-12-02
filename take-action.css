@@ -1,0 +1,178 @@
+/******************************************************/
+/************** CSS FOR TAKE-ACTION.HTML **************/
+/******************************************************/
+
+.page-header-action {
+  width: 100%;
+  padding: 20px;
+}
+h1 {
+  color: #9C528B; /* Med Purple*/
+}
+p {
+  color:  #2F0147; /* dark dark purple */
+}
+h2 {
+  color: #E2C2C6; /* pale pink */
+  font-size: 30px;
+}
+ul {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #E2C2C6; /* pale pink */
+}
+
+
+/******************************************************/
+/***************** ACTION ITEM LIST *******************/
+/******************************************************/
+
+/* Flexbox container that holds all flex items */
+.flex-container-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+/* Right box under title; item in .flex-container */
+.action-list-container {
+  width: 75%;
+  padding: 35px;
+  margin: 5%;
+  background-color: #0d9c90;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+/* Holds all elements related to the action item list; inside the action-list-container */
+#checklistone,
+#checklisttwo{
+  background-color: #9C528B; /*medium purple*/
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+
+/* Header in the list container */
+#checklist-header {
+  text-align: center;
+  color: #0D38D3;
+  letter-spacing: 1px;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+/* The div container for the unordered action item list */
+#listone,
+#listtwo{
+  padding: 10px 0 0 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Styling for individual action list items */
+#listone li,
+#listtwo li {
+  cursor: pointer;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px; 
+  padding-left: 35px;
+  position: relative;
+  list-style-type: none;
+  transition: 0.2s;
+  width: 85%;
+}
+
+/* Check Squares */
+#listone li::before,
+#listtwo li::before{
+  content: "";
+  position: absolute;
+  border-color: #E2C2C6; /* pale pink */
+  border-style: solid;
+  border-width: 2px;
+  top: 15px;
+  left: 13px;
+  height: 10px;
+  width: 10px;
+}
+
+/* background hover*/
+#listone li:hover,
+#listtwo li:hover{
+  background-color: #E2C2C6; /* pale pink */
+  color: #9C528B; /* Med Purple*/
+}
+
+/* Check Square Hover*/
+#listone li:hover::before,
+#listtwo li:hover::before{
+  border-color: #9C528B; /* Med Purple*/
+  border-style: solid;
+}
+
+/* Strikethrough*/
+#listone li.all-done,
+#listtwo li.all-done{
+  text-decoration: line-through;
+}
+
+/* Checkmark When Clicked*/
+#listone li.all-done::before,
+#listtwo li.all-done::before{
+  content: "";
+  position: absolute;
+  border-color: #E2C2C6; /* pale pink */
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 5px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.take-action-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  padding: 20px;
+  
+}
+.take-action-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.bothlists {
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+
+/******************************************************/
+/** CHANGE TAKE-ACTION.HTML CSS BASED ON SCREEN SIZE **/
+/******************************************************/
+
+/* IF THE SCREEN IS ~~700 OR LESS~~ IMPLEMENT THESE RULES */
+
+@media only screen and (max-width: 700px) {
+
+  .take-action-intro {
+  width: 400px;
+  }
+  img {
+    width: 300px;
+  }
+  .flex-container-list {
+    width:400px;
+  }
+}
+
+
