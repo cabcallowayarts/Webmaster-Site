@@ -174,7 +174,7 @@ li.nav a {
 }
 
 .graph-one {
-  background-image: url("https://cdn.glitch.com/f31b061e-f14b-4205-8878-3d6eccdf184d%2Fplaceholder%20image.png?v=1606945016898");
+  background-image: url("images/placeholder%20image.png");
   display:flex;
   justify-content:center;
   align-items: center;
@@ -197,7 +197,7 @@ li.nav a {
   border-radius: 40px;
   text-align: left;
   margin: 10px;
-  list-style-image: url("https://cdn.glitch.com/5b1747df-2d9c-400a-977a-0d34da76f2ae%2Fphone%20v2.png?v=1594784822450");
+  list-style-image: url("images/phone%20v2.png");
 }
 
 .helpitem {
@@ -248,12 +248,12 @@ text-align: left;
 }
 
 .main-message {
-  background-image: url("https://cdn.glitch.com/f31b061e-f14b-4205-8878-3d6eccdf184d%2Fplaceholder%20image.png?v=1606945016898");
+  background-image: url("images/placeholder%20image.png");
   height: 700px;
 }
 
 .image-two {
-  background-image: url("https://cdn.glitch.com/f31b061e-f14b-4205-8878-3d6eccdf184d%2Fplaceholder%20image.png?v=1606945016898");
+  background-image: url("images/placeholder%20image.png");
   height:400px;
 }
 
