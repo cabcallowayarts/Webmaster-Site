@@ -1,0 +1,283 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+    - The CSS for the take-action.html is in take-action.css
+
+COLORS
+#E2C2C6 (pale Purple)
+#2F0147 (dark dark purple)
+#9C528B (medium purple)
+
+*/
+
+/************* UNIVERSAL ELEMENTS ***************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body, html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #E2C2C6; /* pale pink */
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-family: 'Vidaloka', serif;
+  color: #E2C2C6; /* pale pink */
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: 'Vidaloka', serif;
+  color: #9C528B; /* Med Purple*/
+  text-align: center;
+  line-height: 40px;
+}
+
+p {
+  color: #9C528B; /* Med Purple*/
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+a:link, a:visited {
+  text-decoration: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #E2C2C6; /* pale pink */
+  font-size: 20px;
+  border-radius: 20px;
+}
+a:hover {
+  background-color: #9C528B; /* Med Purple*/
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 40px;
+  padding:20px;
+  background-color: #9C528B;
+}
+
+
+/*************** CSS FOR NAV BAR ****************/
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  background-color:  #2F0147; /* dark dark purple */
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
+li.nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: bold;
+}
+
+
+/*********** CSS FOR FLEXBOX HEADING ************/
+.main-text-all {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #9C528B; /* Med Purple*/
+  padding: 5px;
+  width: 500px;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  border-radius: 40px;
+}
+
+.main-intro-text {
+  background-color: #E2C2C6; /* pale pink */
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+  border-radius: 40px;
+}
+
+/*-----------SECTION TWO-----------*/
+
+
+.text-section-two {
+  background-color:  #2F0147; /* dark dark purple */
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section-two-item {
+  display:flex;
+  flex-wrap: wrap;
+  width: 350px;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+}
+.definition{
+   color:  #E2C2C6; /* pale pink */
+  text-align: left;
+}
+.section-two-meaning {
+  background-color: #9C528B; /* Med Purple*/
+  border-radius: 40px;
+  padding: 20px;
+}
+.h2colorchange{
+  color: #E2C2C6; /* pale pink */
+}
+.pcolorchange {
+  color: #2F0147; /* dark dark purple */
+}
+
+/*-----------SECTION THREE-----------*/
+.text-section-three {
+  background-color:  #2F0147; /* dark dark purple */
+  
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section-three-item {
+  display:flex;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  
+}
+.warningsigns{
+  color: #9C528B; /* Med Purple*/
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  background-color:#E2C2C6; /* pale pink */
+  border-radius: 40px;
+  text-align: left;
+  margin: 10px;
+}
+
+.graph-one {
+  background-image: url("https://cdn.glitch.com/f31b061e-f14b-4205-8878-3d6eccdf184d%2Fplaceholder%20image.png?v=1606945016898");
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/*-----------SECTION FOUR (HOTLINES)-----------*/
+.text-section-four {
+  background-color:  #2F0147; /* dark dark purple */
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hotlines{
+  color: #9C528B; /* Med Purple*/
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  border-radius: 40px;
+  text-align: left;
+  margin: 10px;
+  list-style-image: url("https://cdn.glitch.com/5b1747df-2d9c-400a-977a-0d34da76f2ae%2Fphone%20v2.png?v=1594784822450");
+}
+
+.helpitem {
+  color:#E2C2C6; /* pale pink */
+}
+#more-hotlines:link,
+#more-hotlines:visited
+{
+  background-color: #9C528B;
+  border-radius: 10px;
+  padding: 3px;
+}
+#more-hotlines:hover{
+  background-color:#E2C2C6;
+  color: #2F0147;
+  border-radius: 10px;
+}
+
+/*-----------Sources Page-----------*/
+.source{
+text-indent: -40px;
+margin-left: 30px;
+text-align: left;
+
+}
+.sources {
+  margin:60px;
+  text-align: left;
+}
+.source-header{
+  color:  #2F0147; /* dark dark purple */
+}
+
+
+
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+.main-message,
+.image-two,
+.graph-one{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+.main-message {
+  background-image: url("https://cdn.glitch.com/f31b061e-f14b-4205-8878-3d6eccdf184d%2Fplaceholder%20image.png?v=1606945016898");
+  height: 700px;
+}
+
+.image-two {
+  background-image: url("https://cdn.glitch.com/f31b061e-f14b-4205-8878-3d6eccdf184d%2Fplaceholder%20image.png?v=1606945016898");
+  height:400px;
+}
+
+
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+@media screen and (max-width: 900px) {
+  .main-text-all {
+    width: 375px;
+    position: absolute;
+    top: 10%;
+    margin:auto;
+  }
+  h1 {
+  font-size: 40px;
+  }
+  p {
+  font-size: 20px;
+  }
+  ul.nav-bar {
+  display:flex;
+  flex-direction:column;
+  }
+  .sources{
+    width:400px;
+  }
+}
+
