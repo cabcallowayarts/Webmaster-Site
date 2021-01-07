@@ -6,27 +6,28 @@ This CSS file is contains the CSS rule sets for
     - The CSS for the take-action.html is in take-action.css
 
 COLORS
-#E2C2C6 (pale Purple)
-#2F0147 (dark dark purple)
-#9C528B (medium purple)
+#F08700 (Tangerine)
+#FFFEEB (Ivory)
+#00A6A6 (Aqua)
+#3D3D3D (Charcoal)
+#F49F0A (Lt Orange)
 
 */
 
 /************* UNIVERSAL ELEMENTS ***************/
 
-/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
 body, html {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  background-color: #E2C2C6; /* pale pink */
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFEEB; /* ivory */
 }
 
 h1 {
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 70px;
   font-family: 'Vidaloka', serif;
-  color: #E2C2C6; /* pale pink */
+  color: #FFFEEB; /* ivory */
   text-align: center;
 }
 
@@ -34,33 +35,47 @@ h2 {
   letter-spacing: 3px;
   font-size: 40px;
   font-family: 'Vidaloka', serif;
-  color: #9C528B; /* Med Purple*/
+  color: #3D3D3D; /* Charcoal*/
   text-align: center;
   line-height: 40px;
 }
 
+h3 {
+    letter-spacing: 1px;
+  font-size: 20px;
+  font-family: 'Vidaloka', serif;
+  color: #3D3D3D; /* Charcoal*/
+  text-align: center;
+  line-height: 25px;
+}
+
 p {
-  color: #9C528B; /* Med Purple*/
+  color: #FFFEEB; /* ivory */
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 25px;
   text-align: center;
 }
+
+.pcolorchange{
+    color: #00A6A6; /* Aqua*/
+}
+
 a:link, a:visited {
   text-decoration: none;
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #E2C2C6; /* pale pink */
+  color:#3D3D3D; /* Charcoal*/
   font-size: 20px;
   border-radius: 20px;
 }
 a:hover {
-  background-color: #9C528B; /* Med Purple*/
+  background-color: #F49F0A; /* Lt Orange*/
   border-radius: 20px;
 }
 
 img {
   border-radius: 40px;
   padding:20px;
-  background-color: #9C528B;
+  background-color: #00A6A6; /* Aqua*/
 }
 
 
@@ -70,7 +85,7 @@ ul.nav-bar {
   list-style-type: none;
   margin: 0px;
   padding: 10px;
-  background-color:  #2F0147; /* dark dark purple */
+  background-color: #F08700; /* tangerine */
   display:flex;
   flex-direction:row;
   justify-content: flex-end;
@@ -91,7 +106,7 @@ li.nav a {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #9C528B; /* Med Purple*/
+  background-color: #00A6A6; /* Aqua*/
   padding: 5px;
   width: 500px;
   position: absolute;
@@ -101,19 +116,20 @@ li.nav a {
 }
 
 .main-intro-text {
-  background-color: #E2C2C6; /* pale pink */
+  background-color: #FFFEEB; /* ivory */
   padding: 10px;
   margin: 10px;
   letter-spacing: 2px;
   line-height: 1.4em;
-  border-radius: 40px;
+    border-radius: 40px;
+    color: #00A6A6; /* Aqua*/
 }
 
 /*-----------SECTION TWO-----------*/
 
 
 .text-section-two {
-  background-color:  #2F0147; /* dark dark purple */
+  background-color:  #F08700; /* tangerine */
   padding: 20px;
   display:flex;
   flex-direction: row;
@@ -129,25 +145,20 @@ li.nav a {
   align-items: center;
 }
 .definition{
-   color:  #E2C2C6; /* pale pink */
   text-align: left;
 }
 .section-two-meaning {
-  background-color: #9C528B; /* Med Purple*/
+  background-color: #00A6A6; /* Aqua*/
   border-radius: 40px;
   padding: 20px;
 }
 .h2colorchange{
-  color: #E2C2C6; /* pale pink */
-}
-.pcolorchange {
-  color: #2F0147; /* dark dark purple */
+  color: #FFFEEB; /* ivory */
 }
 
 /*-----------SECTION THREE-----------*/
 .text-section-three {
-  background-color:  #2F0147; /* dark dark purple */
-  
+  background-color:  #F08700; /* tangerine */
   padding: 20px;
   display:flex;
   flex-direction: row;
@@ -164,10 +175,10 @@ li.nav a {
   
 }
 .warningsigns{
-  color: #9C528B; /* Med Purple*/
+  color: #00A6A6; /* Aqua*/
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 25px;
-  background-color:#E2C2C6; /* pale pink */
+  background-color:#FFFEEB; /* ivory */
   border-radius: 40px;
   text-align: left;
   margin: 10px;
@@ -182,7 +193,7 @@ li.nav a {
 
 /*-----------SECTION FOUR (HOTLINES)-----------*/
 .text-section-four {
-  background-color:  #2F0147; /* dark dark purple */
+  background-color:  #F08700; /* tangerine */
   padding: 20px;
   display:flex;
   flex-direction: row;
@@ -191,7 +202,7 @@ li.nav a {
 }
 
 .hotlines{
-  color: #9C528B; /* Med Purple*/
+  color: #00A6A6; /* Aqua*/
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 25px;
   border-radius: 40px;
@@ -201,18 +212,18 @@ li.nav a {
 }
 
 .helpitem {
-  color:#E2C2C6; /* pale pink */
+  color:#FFFEEB; /* ivory */
 }
 #more-hotlines:link,
 #more-hotlines:visited
 {
-  background-color: #9C528B;
+  background-color: #00A6A6; /* Aqua*/
   border-radius: 10px;
   padding: 3px;
 }
 #more-hotlines:hover{
-  background-color:#E2C2C6;
-  color: #2F0147;
+  background-color:#FFFEEB; /* ivory */
+  color: #F08700; /* tangerine */
   border-radius: 10px;
 }
 
@@ -228,7 +239,7 @@ text-align: left;
   text-align: left;
 }
 .source-header{
-  color:  #2F0147; /* dark dark purple */
+  color:  #F08700; /* tangerine */
 }
 
 
