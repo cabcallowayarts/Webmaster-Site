@@ -54,6 +54,7 @@ p {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 25px;
   text-align: center;
+    line-height: 25px;
 }
 
 .pcolorchange{
