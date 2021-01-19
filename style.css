@@ -31,6 +31,7 @@ h1 {
   font-family: 'Vidaloka', serif;
   color: #FFFEEB; /* ivory */
   text-align: center;
+    line-height: 20px;
 }
 
 h2 {
@@ -45,7 +46,7 @@ h2 {
 h3 {
     letter-spacing: 1px;
   font-size: 20px;
-  font-family: 'Vidaloka', serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   color: #3D3D3D; /* Charcoal*/
   text-align: center;
   line-height: 25px;
@@ -138,6 +139,7 @@ li.nav a {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+    align-items: center;
 }
 .section-two-item {
   display:flex;
@@ -147,6 +149,7 @@ li.nav a {
   flex-direction:column;
   align-items: center;
 }
+}
 .definition{
   text-align: left;
 }
@@ -154,9 +157,68 @@ li.nav a {
   background-color: #00A6A6; /* Aqua*/
   border-radius: 40px;
   padding: 20px;
+    display: flex;
+    justify-content: center;
+  flex-direction: row;
+  align-items: center;
+    flex-wrap: wrap;
 }
 .h2colorchange{
   color: #FFFEEB; /* ivory */
+}
+
+/*-----------COUNTER ANIMATION-----------*/
+.outerstat{
+    margin:40px;
+}
+
+.bigstat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigstattext{
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 80px;
+    color: #3D3D3D; /* Charcoal*/
+    line-height: 70px;
+    margin: 10px;
+}
+
+.plussize {
+   font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200px;
+    line-height: 150px;
+    margin: 10px;
+    color: #3D3D3D; /* Charcoal*/
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.stats {
+  animation: counter 5s infinite ease-out;
+  counter-reset: num var(--num);
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200px;
+    line-height: 150px;
+    margin: 10px;
+    color: #3D3D3D; /* Charcoal*/
+}
+.stats::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from{
+    --num: 0;
+  }
+    to{
+    --num: 100;
+  }
 }
 
 /*-----------SECTION THREE-----------*/
@@ -293,5 +355,17 @@ text-align: left;
   .sources{
     width:400px;
   }
+    .bigstattext{
+      font-size: 40px;
+        line-height: 40px;
+    }
+    .stats{
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .plussize{
+        font-size: 100px;
+        line-height: 100px;
+    }
 }
 
