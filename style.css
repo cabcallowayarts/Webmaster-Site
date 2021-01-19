@@ -58,6 +58,7 @@ p {
   font-size: 25px;
   text-align: center;
     line-height: 25px;
+    margin: 10px;
 }
 
 .pcolorchange{
@@ -165,6 +166,11 @@ li.nav a {
 }
 .h2colorchange{
   color: #FFFEEB; /* ivory */
+}
+
+.smallstats{
+    display: flex;
+    flex-direction: row;
 }
 
 /*-----------COUNTER ANIMATION-----------*/
@@ -324,7 +330,7 @@ text-align: left;
 }
 
 .main-message {
-  background-image: url("images/placeholder%20image.png");
+  background-image: url("images/HeaderphotoTeletots.jpg");
   height: 700px;
 }
 
