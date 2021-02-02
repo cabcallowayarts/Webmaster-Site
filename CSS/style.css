@@ -1,6 +1,6 @@
-/* 
+/*
 
-This CSS file is contains the CSS rule sets for 
+This CSS file is contains the CSS rule sets for
     - index.html
     - any universal elements that all pages use
     - The CSS for the take-action.html is in take-action.css
@@ -11,8 +11,6 @@ COLORS
 #00A6A6 (Aqua)
 #3D3D3D (Charcoal)
 #F49F0A (Lt Orange)
-
-Why isn't it working :(
 
 */
 
@@ -243,7 +241,7 @@ li.nav a {
   justify-content: center;
   flex-direction:column;
   align-items: center;
-  
+
 }
 .warningsigns{
   color: #00A6A6; /* Aqua*/
