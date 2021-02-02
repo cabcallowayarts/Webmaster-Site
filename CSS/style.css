@@ -296,29 +296,12 @@ li.nav a {
   border-radius: 10px;
 }
 
-/*-----------Sources Page-----------*/
-.source{
-text-indent: -40px;
-margin-left: 30px;
-text-align: left;
-
-}
-.sources {
-  margin:60px;
-  text-align: left;
-}
-.source-header{
-  color:  #F08700; /* tangerine */
-}
-
 
 
 
 /*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
 
-.main-message,
-.image-two,
-.graph-one{
+.main-message{
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -327,13 +310,27 @@ text-align: left;
   background-attachment: fixed;
 }
 
+.image-mid, .image-two{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
 .main-message {
-  background-image: url("Images/HeaderphotoTeletots.jpg");
-  height: 700px;
+  background-image: url("/Images/mainmessage2.jpg");
+  height: 1000px;
+}
+
+.image-mid{
+    background-image: url("/Images/mainmessage2.jpg");
+  height: 400px;
 }
 
 .image-two {
-  background-image: url("Images/HeaderphotoTeletots.jpg");
+  background-image: url("/Images/mainmessage2.jpg");
   height:400px;
 }
 
