@@ -328,14 +328,15 @@ text-align: left;
 }
 
 .main-message {
-  background-image: url("images/HeaderphotoTeletots.jpg");
+  background-image: url("Images/HeaderphotoTeletots.jpg");
   height: 700px;
 }
 
 .image-two {
-  background-image: url("images/placeholder%20image.png");
+  background-image: url("Images/HeaderphotoTeletots.jpg");
   height:400px;
 }
+
 
 
 /***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
