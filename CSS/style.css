@@ -16,6 +16,9 @@ COLORS
 
 /************* UNIVERSAL ELEMENTS ***************/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
 body, html {
     height: 100%;
     margin: 0px;
