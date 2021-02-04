@@ -320,17 +320,17 @@ li.nav a {
 }
 
 .main-message {
-  background-image: url('/images/mainmessage2.jpg');
+  background-image: url(../images/mainmessage2.jpg);
   height: 1000px;
 }
 
 .image-mid{
-    background-image: url('/images/mainmessage2.jpg');
+    background-image: url(../images/mainmessage2.jpg);
   height: 400px;
 }
 
 .image-two {
-  background-image: url('/images/mainmessage2.jpg');
+  background-image: url(../images/mainmessage2.jpg);
   height:400px;
 }
 
