@@ -49,11 +49,11 @@ p{
 }
 
 .headimage {
-  background-image: url("/Images/Adminimage.jpg");
+  background-image: url('../Images/Adminimage.jpg');
   height: 400px;
 }
 
 .imagecont{
-    background-image: url("/Images/Adminimage.jpg");
+    background-image: url('../Images/Adminimage.jpg');
   height: 200px;
 }

@@ -21,11 +21,11 @@
 }
 
 .headimage {
-  background-image: url("/Images/aboutimage.jpg");
+  background-image: url('../Images/aboutimage.jpg');
   height: 400px;
 }
 
 .imagecont{
-    background-image: url("/Images/aboutimage.jpg");
+    background-image: url('../Images/aboutimage.jpg.);
   height: 200px;
 }
