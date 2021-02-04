@@ -1,0 +1,376 @@
+/*
+
+This CSS file is contains the CSS rule sets for
+    - index.html
+    - any universal elements that all pages use
+    - The CSS for the take-action.html is in take-action.css
+
+COLORS
+#F08700 (Tangerine)
+#FFFEEB (Ivory)
+#00A6A6 (Aqua)
+#3D3D3D (Charcoal)
+#F49F0A (Lt Orange)
+
+*/
+
+/************* UNIVERSAL ELEMENTS ***************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFEEB; /* ivory */
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 70px;
+  font-family: 'Vidaloka', serif;
+  color: #FFFEEB; /* ivory */
+  text-align: center;
+    line-height: 20px;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: 'Vidaloka', serif;
+  color: #3D3D3D; /* Charcoal*/
+  text-align: center;
+  line-height: 40px;
+}
+
+h3 {
+    letter-spacing: 1px;
+  font-size: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #3D3D3D; /* Charcoal*/
+  text-align: center;
+  line-height: 25px;
+}
+
+p {
+  color: #FFFEEB; /* ivory */
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  text-align: center;
+    line-height: 25px;
+    margin: 10px;
+}
+
+.pcolorchange{
+    color: #00A6A6; /* Aqua*/
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color:#3D3D3D; /* Charcoal*/
+  font-size: 20px;
+  border-radius: 20px;
+}
+a:hover {
+  background-color: #F49F0A; /* Lt Orange*/
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 40px;
+  padding:20px;
+  background-color: #00A6A6; /* Aqua*/
+}
+
+
+/*************** CSS FOR NAV BAR ****************/
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  background-color: #F08700; /* tangerine */
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
+li.nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: bold;
+}
+
+
+/*********** CSS FOR FLEXBOX HEADING ************/
+.main-text-all {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #00A6A6; /* Aqua*/
+  padding: 5px;
+  width: 500px;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  border-radius: 40px;
+}
+
+.main-intro-text {
+  background-color: #FFFEEB; /* ivory */
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+    border-radius: 40px;
+    color: #00A6A6; /* Aqua*/
+}
+
+/*-----------SECTION TWO-----------*/
+
+
+.text-section-two {
+  background-color:  #F08700; /* tangerine */
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+    align-items: center;
+}
+.section-two-item {
+  display:flex;
+  flex-wrap: wrap;
+  width: 350px;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+}
+}
+.definition{
+  text-align: left;
+}
+.section-two-meaning {
+  background-color: #00A6A6; /* Aqua*/
+  border-radius: 40px;
+  padding: 20px;
+    display: flex;
+    justify-content: center;
+  flex-direction: row;
+  align-items: center;
+    flex-wrap: wrap;
+}
+.h2colorchange{
+  color: #FFFEEB; /* ivory */
+}
+
+.smallstats{
+    display: flex;
+    flex-direction: row;
+}
+
+/*-----------COUNTER ANIMATION-----------*/
+.outerstat{
+    margin:40px;
+}
+
+.bigstat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigstattext{
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 80px;
+    color: #3D3D3D; /* Charcoal*/
+    line-height: 70px;
+    margin: 10px;
+}
+
+.plussize {
+   font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200px;
+    line-height: 150px;
+    margin: 10px;
+    color: #3D3D3D; /* Charcoal*/
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.stats {
+  animation: counter 5s infinite ease-out;
+  counter-reset: num var(--num);
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200px;
+    line-height: 150px;
+    margin: 10px;
+    color: #3D3D3D; /* Charcoal*/
+}
+.stats::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from{
+    --num: 0;
+  }
+    to{
+    --num: 100;
+  }
+}
+
+/*-----------SECTION THREE-----------*/
+.text-section-three {
+  background-color:  #F08700; /* tangerine */
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section-three-item {
+  display:flex;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+
+}
+.warningsigns{
+  color: #00A6A6; /* Aqua*/
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  background-color:#FFFEEB; /* ivory */
+  border-radius: 40px;
+  text-align: left;
+  margin: 10px;
+}
+
+.graph-one {
+  background-image: url('/images/placeholder%20image.png');
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/*-----------SECTION FOUR (HOTLINES)-----------*/
+.text-section-four {
+  background-color:  #F08700; /* tangerine */
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hotlines{
+  color: #00A6A6; /* Aqua*/
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  border-radius: 40px;
+  text-align: left;
+  margin: 10px;
+  list-style-image: url('/images/phone%20v2.png');
+}
+
+.helpitem {
+  color:#FFFEEB; /* ivory */
+}
+#more-hotlines:link,
+#more-hotlines:visited
+{
+  background-color: #00A6A6; /* Aqua*/
+  border-radius: 10px;
+  padding: 3px;
+}
+#more-hotlines:hover{
+  background-color:#FFFEEB; /* ivory */
+  color: #F08700; /* tangerine */
+  border-radius: 10px;
+}
+
+
+
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+.main-message{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+.image-mid, .image-two{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+.main-message {
+  background-image: url('../images/mainmessage2.jpg');
+  height: 1000px;
+}
+
+.image-mid{
+    background-image: url('../images/mainmessage2.jpg');
+  height: 400px;
+}
+
+.image-two {
+  background-image: url('../images/mainmessage2.jpg');
+  height:400px;
+}
+
+
+
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+@media screen and (max-width: 900px) {
+  .main-text-all {
+    width: 375px;
+    position: absolute;
+    top: 10%;
+    margin:auto;
+  }
+  h1 {
+  font-size: 40px;
+  }
+  p {
+  font-size: 20px;
+  }
+  ul.nav-bar {
+  display:flex;
+  flex-direction:column;
+  }
+  .sources{
+    width:400px;
+  }
+    .bigstattext{
+      font-size: 40px;
+        line-height: 40px;
+    }
+    .stats{
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .plussize{
+        font-size: 100px;
+        line-height: 100px;
+    }
+}
+
