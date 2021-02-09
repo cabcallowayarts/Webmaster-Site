@@ -146,14 +146,13 @@ li.nav a {
 .section-two-item {
   display:flex;
   flex-wrap: wrap;
-  width: 350px;
+  width: 375px;
   justify-content: center;
   flex-direction:column;
   align-items: center;
 }
-}
-.definition{
-  text-align: left;
+.centerstat{
+  text-align: center;
 }
 .section-two-meaning {
   background-color: #00A6A6; /* Aqua*/
@@ -172,6 +171,9 @@ li.nav a {
 .smallstats{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-----------COUNTER ANIMATION-----------*/
@@ -228,6 +230,22 @@ li.nav a {
   }
 }
 
+/*-----------Reviewers-----------*/
+
+.stars {
+    background-color: #F08700;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+
+.reviewername {
+    line-height: 20px;
+}
+
+
 /*-----------SECTION THREE-----------*/
 .text-section-three {
   background-color:  #F08700; /* tangerine */
@@ -256,11 +274,22 @@ li.nav a {
   margin: 10px;
 }
 
-.graph-one {
-  background-image: url('/images/placeholder%20image.png');
-  display:flex;
-  justify-content:center;
-  align-items: center;
+a.pricelink:link, a.pricelink:visited {
+    background-color:  #00A6A6; /* Aqua*/
+  font-family: 'Montserrat Alternates', sans-serif;
+  color:#FFFEEB; /* ivory */
+  font-size: 25px;
+  border-radius: 20px;
+    margin:20px;
+    padding:20px;
+}
+a.pricelink:hover {
+  background-color: #F49F0A; /* Lt Orange*/
+  border-radius: 20px;
+}
+.accessibility{
+    font-size: 35px;
+    line-height: 30px;
 }
 
 /*-----------SECTION FOUR (HOTLINES)-----------*/
