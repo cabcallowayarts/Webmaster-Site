@@ -11,6 +11,15 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+.h2colorchange{
+    font-size: 60px;
+}
+
+.emphasis{
+    font-size: 35px;
+    line-height: 35px;
+}
 .headimage, .imagecont{
   position: relative;
   background-position: center;

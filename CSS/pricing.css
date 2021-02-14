@@ -1,0 +1,49 @@
+/*
+COLORS
+#F08700 (Tangerine)
+#FFFEEB (Ivory)
+#00A6A6 (Aqua)
+#3D3D3D (Charcoal)
+#F49F0A (Lt Orange)
+*/
+
+.pricingbg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+.forclients, .forproviders{
+    background-color: #F08700;
+    padding: 20px;
+    width: 550px;
+    border-radius: 30px;
+    margin: 30px;
+}
+.titlefc, .titlefp{
+    line-height: 80px;
+}
+
+.pricingbg{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+.pricingbg {
+  background-image: url('../images/pricingbg.jpg');
+  height: 800px;
+}
+
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+@media screen and (max-width: 900px) {
+    .forclients, .forproviders{
+        width: 350px;
+    }
+
+}
+

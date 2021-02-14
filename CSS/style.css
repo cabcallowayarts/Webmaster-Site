@@ -264,7 +264,7 @@ li.nav a {
   align-items: center;
 
 }
-.warningsigns{
+.services{
   color: #00A6A6; /* Aqua*/
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 25px;
@@ -302,7 +302,7 @@ a.pricelink:hover {
   flex-wrap: wrap;
 }
 
-.hotlines{
+.contact{
   color: #00A6A6; /* Aqua*/
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 25px;
@@ -315,20 +315,6 @@ a.pricelink:hover {
 .helpitem {
   color:#FFFEEB; /* ivory */
 }
-#more-hotlines:link,
-#more-hotlines:visited
-{
-  background-color: #00A6A6; /* Aqua*/
-  border-radius: 10px;
-  padding: 3px;
-}
-#more-hotlines:hover{
-  background-color:#FFFEEB; /* ivory */
-  color: #F08700; /* tangerine */
-  border-radius: 10px;
-}
-
-
 
 
 /*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
@@ -340,6 +326,8 @@ a.pricelink:hover {
   background-size: cover;
   min-height: 100%; /* This adjusts the height of the image */
   background-attachment: fixed;
+    background-image: url('../images/mainmessage2.jpg');
+  height: 1000px;
 }
 
 .image-mid, .image-two{
@@ -349,15 +337,7 @@ a.pricelink:hover {
   background-size: cover;
   min-width: 100%; /* This adjusts the height of the image */
   background-attachment: fixed;
-}
-
-.main-message {
-  background-image: url('../images/mainmessage2.jpg');
-  height: 1000px;
-}
-
-.image-mid{
-    background-image: url('../images/mainmessage2.jpg');
+     background-image: url('../images/mainmessage2.jpg');
   height: 400px;
 }
 
@@ -365,7 +345,6 @@ a.pricelink:hover {
   background-image: url('../images/mainmessage2.jpg');
   height:400px;
 }
-
 
 
 /***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
