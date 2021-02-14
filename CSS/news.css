@@ -1,0 +1,45 @@
+.titlebox{
+    display: flex;
+    justify-content: center;
+}
+.title {
+    background-color: #00A6A6;
+    padding: 20px;
+    width: 500px;
+    line-height: normal;
+    border-radius: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.h2colorchange{
+    font-size: 60px;
+}
+
+.emphasis{
+    font-size: 35px;
+    line-height: 35px;
+}
+.headimage, .imagecont{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+.headimage {
+  background-image: url('../images/aboutimage.jpg');
+  height: 400px;
+}
+
+.imagecont{
+    background-image: url('../images/aboutimage.jpg');
+  height: 200px;
+}
+
+.newstitle{
+    font-size: 45px;
+    
+}
