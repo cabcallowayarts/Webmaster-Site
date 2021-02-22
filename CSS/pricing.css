@@ -40,10 +40,20 @@ COLORS
 }
 
 /***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+@media screen and (max-width: 1350px){
+    .pricingbg {
+  background-image: url('../images/pricingbg.jpg');
+  height: 1500px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .forclients, .forproviders{
         width: 350px;
     }
-
+    .pricingbg {
+  background-image: url('../images/pricingbg.jpg');
+  height: 1500px;
+    }
 }
 
