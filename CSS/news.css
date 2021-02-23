@@ -30,16 +30,22 @@
 }
 
 .headimage {
-  background-image: url('../images/aboutimage.jpg');
+  background-image: url('../images/newsimage.jpg');
   height: 400px;
 }
 
 .imagecont{
-    background-image: url('../images/aboutimage.jpg');
+    background-image: url('../images/newsimage.jpg');
   height: 200px;
 }
 
 .newstitle{
     font-size: 45px;
-    
+    line-height: 100%;
+}
+
+.newsblock{
+    line-height: 110%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
 }
