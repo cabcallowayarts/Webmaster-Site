@@ -1,0 +1,81 @@
+/*
+COLORS
+#F08700 (Tangerine)
+#FFFEEB (Ivory)
+#00A6A6 (Aqua)
+#3D3D3D (Charcoal)
+#F49F0A (Lt Orange)
+*/
+
+h2{
+    color: #FFFEEB;
+}
+
+.titlebox{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.title {
+    background-color: #00A6A6;
+    padding: 20px;
+    width: 500px;
+    line-height: normal;
+    border-radius: 40px;
+}
+.admin, .provider{
+    margin: 10px;
+
+}
+
+iframe{
+    width: 400px;
+    height:600px;
+    padding: 10px;
+}
+
+.resourceelement{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+}
+
+.resources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F08700;
+    flex-wrap: wrap;
+
+}
+
+.adminpic, .providerpic{
+    border-radius: 40px;
+    padding:20px;
+    background-color: #F08700;
+}
+p{
+  color: #FFFEEB;
+}
+
+.headimage, .imagecont{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+.headimage {
+  background-image: url('../images/resourcesbg.jpg');
+  height: 400px;
+}
+
+.imagecont{
+    background-image: url('../images/resourcesbg.jpg');
+  height: 200px;
+}
